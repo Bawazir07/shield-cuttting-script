@@ -144,9 +144,10 @@ puts $infile_0 "split_objects -rect $overlap_bbox"
                     break
                 }
 
+		split_objects -rect $overlap_bbox
            }  
 }
-#split_objects -rect $overlap_bbox
+		
                         ## FIXME: Assuming that this is M15 RN
                 puts $infile " $layer |    $shape_owner    |    $shape_name    |    $shape_intersect_owner    |    $shape_intersect    |    $shape_bbox    |    $shape_intersect_bbox    |    $overlap_bbox | $removal_status  "
                 #puts $infile "-"
